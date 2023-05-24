@@ -85,3 +85,35 @@ function getMonthByNumber(monthNumber) {
 }
 
 console.log(getMonthByNumber(monthNumber));
+
+
+
+convertRub();
+
+let USD = 0.012;
+let EUR = 0.011;
+let KZT = 5.58;
+let AED = 0.045;
+
+console.log(convertRub(10000,'EUR'));
+
+function convertRub(valueRub, currency) {
+    switch (currency) {
+        case 'USD':
+            console.log(valueRub * USD)
+        break;
+
+        case 'EUR':
+            console.log(valueRub * EUR)
+        break;
+
+        case 'KZT':
+            console.log(valueRub * KZT)
+        break;
+
+        case 'AED':
+            console.log(valueRub * AED)
+        break;
+    }
+    return currency;
+}
