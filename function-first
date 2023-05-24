@@ -1,0 +1,27 @@
+console.log(multiple(6, 545))
+
+function multiple(a, b) {
+    return a * b;
+}
+
+
+let day = 24;
+let month = 5;
+let year = 2023;
+let dayUntilTheTenth = day;
+let monthUntilTheTenth = month;
+
+console.log(buildDate(day, month, year));
+
+function buildDate(day, month, year) {
+    if (day < 10) dayUntilTheTenth = `0${day}`
+    if (month < 10) monthUntilTheTenth = `0${month}`
+    return `${dayUntilTheTenth}/${monthUntilTheTenth}/${year}`
+}
+
+
+console.log(isAdult(19));
+
+function isAdult(age) {
+   return age >= 18;
+}
