@@ -35,51 +35,51 @@ let monthNumber = Number(monthInput);
 function getMonthByNumber(monthNumber) {
     switch (monthNumber) {
         case 1:
-            alert('january');
+            return('january');
         break;
 
         case 2:
-            alert('february');
+            return('february');
         break;
 
         case 3:
-            alert('march');
+            return('march');
         break;
 
         case 4:
-            alert('april');
+            return('april');
         break;
 
         case 5:
-            alert('may');
+            return('may');
         break;
 
         case 6:
-            alert('june');
+            return('june');
         break;
 
         case 7:
-            alert('july');
+            return('july');
         break;
 
         case 8:
-            alert('august');
+            return('august');
         break;
 
         case 9:
-            alert('september');
+            return('september');
         break;
 
         case 10:
-            alert('october');
+            return('october');
         break;
 
         case 11:
-            alert('november');
+            return('november');
         break;
 
         case 12:
-            alert('december');
+            return('december');
         break;
     }
 }
@@ -100,19 +100,19 @@ console.log(convertRub(10000,'EUR'));
 function convertRub(valueRub, currency) {
     switch (currency) {
         case 'USD':
-            console.log(valueRub * USD)
+            return(valueRub * USD)
         break;
 
         case 'EUR':
-            console.log(valueRub * EUR)
+            return(valueRub * EUR)
         break;
 
         case 'KZT':
-            console.log(valueRub * KZT)
+            return(valueRub * KZT)
         break;
 
         case 'AED':
-            console.log(valueRub * AED)
+            return(valueRub * AED)
         break;
     }
     return currency;
