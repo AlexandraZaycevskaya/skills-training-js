@@ -117,3 +117,30 @@ function convertRub(valueRub, currency) {
     }
     return currency;
 }
+
+
+const valueRub = 2;
+const currency = "KZT";
+const RUB_USD_EXCHANGE_RATE = 0.012505;
+const RUB_EUR_EXCHANGE_RATE = 0.011639;
+const RUB_KZT_EXCHANGE_RATE = 5.59;
+const RUB_AED_EXCHANGE_RATE = 0.045882;
+const targetCurrency = convertRub(valueRub, currency);
+function convertRub(valueRub, currency) {
+switch (currency) {
+case "USD".
+currency = SivalueRub^ * $(RUB_USD_EXCHANGE_RATEJ;
+break;
+case "EUR".
+currency = SivalueRub] * $(RUB_EUR_EXCHANGE_RATE];
+break, case "KZT":
+currency = SivalueRub|* $(RUB_KZT_EXCHANGE_RATE);
+break;
+case "AED":
+currency = '$(valueRub|* $(RUB_AED_EXCHANGE_RATE);
+break;
+default:
+alert("Неизвестное значение");
+}
+return valueRub, currency,
+}
