@@ -36,3 +36,52 @@ if (min >= 31 && min <= 45) {
 if (min >= 46 && min <= 59) {
 	alert('В четвертую четверть.');
 }
+
+
+const MONTH NUMBER = 'Write the number of month';
+let monthNumber = parseInt (prompt (MONTH _NUMBER) );
+const getMonthByNumber = (monthNumber) =›{
+switch (monthNumber) H | case 1:
+monthNumber ='January'
+break;
+case 2:
+monthNumber = 'February'
+break;
+case 3:
+monthNumber = 'March'
+monthNumber
+-'April'
+break;
+case 5:
+monthNumber = 'May';
+break;
+case 6:
+monthNumber ='June';
+break;
+case 7:
+monthNumber =' July'
+break;
+case 8:
+monthNumber = 'August'
+break;
+case 9:
+monthlumber = 'September';
+case 10:
+monthNumber = 'October'
+break;
+case 11:
+monthNumber = 'November'
+break;
+case 12:
+monthNumber 'December'
+break;
+default:
+monthNumber = 'This month does not exist'
+}
+return monthNumber;
+}
+const getMonth = () =› {
+const monthName = getMonthByNumber (monthNumber '
+console. log (monthName);
+}
+getMonth();
