@@ -10,14 +10,15 @@ if (typeof b === 'number'){
 
 // второе задание
 
+let repsCountInput = prompt('Введите количество повторений');
+let repsCount = Number(repsCountInput);
+
 const STRENGTH_REPS_COUNT_MAX = 5;
 const MASS_REPS_COUNT_MAX = 12;
 
 const STRENGHT_MESSAGE = "Вы работаете на силу";
 const MASS_MESSAGE = "Вы работает на массу";
 const RELIEF_MESSAGE = "Вы работаете на рельеф";
-
-let repsCount = 6;
 
 if (repsCount <= STRENGTH_REPS_COUNT_MAX ) {
     console.log(STRENGHT_MESSAGE);
