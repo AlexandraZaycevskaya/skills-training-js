@@ -1,4 +1,5 @@
 // 1 задание
+
 for (let i = -50; i <= 50; i++) {
     console.log(i);
 }
@@ -11,11 +12,10 @@ for (let a = 10; a >= 0; a--) {
 }
 
 // 3 задание
+
 for (let i = 1; i <= 100; i++) {
-    if (i % 7 === 0) {
-        console.log(i);
-    }
-    
+    if (i % 7 !== 0) continue;
+    console.log(i);
 }
 
 // 4 задание
