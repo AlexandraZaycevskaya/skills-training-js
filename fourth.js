@@ -6,7 +6,7 @@ for (let i = -50; i <= 50; i++) {
 // 2 задание
 
 let a = 10;
-for (let a = 10; a => 0; a--) {
+for (let a = 10; a >= 0; a--) {
     console.log(a);
 }
 
