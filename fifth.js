@@ -1,8 +1,11 @@
 // 1 задание
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr = [];
 
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);    
+for (let i = 0; i <= 10; i++) {
+    arr.push(i);   
+}
+for (const element of arr) {
+    console.log(element)
 }
 
 // 2 задание
@@ -49,6 +52,26 @@ for (let i = 1; i < numbers.length; i++) {
 }
 console.log(numbers);
 console.log(maxIndex, max);
+
+
+// let arr = [];
+// let max = 10;
+
+// for (let i = 1; i <= 10; i++) {
+//     arr.push(Math.floor(Math.random() * max));
+// }
+
+// console.log(arr)
+// let even = 0;
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) continue; 
+//     even++;
+// }
+
+// console.log(even);
+// for (const element of arr) {
+//     console.log(element)
+// }
 
 // 5 задание
 let numbers = [];
