@@ -4,12 +4,22 @@ let arr = [];
 for (let i = 0; i <= 10; i++) {
     arr.push(i);   
 }
+
 for (const element of arr) {
     console.log(element)
 }
 
 // 2 задание
-let numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numbers = [];
+
+for (let i = 0; i <= 10; i++) {
+    numbers.push(i);   
+}
+
+for (const element of arr) {
+    console.log(element)
+}
+
 let sum = 0;
 
 for (let i = 0; i < numbers.length; i++) {
