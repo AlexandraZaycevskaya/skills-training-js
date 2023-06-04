@@ -163,3 +163,28 @@ for (let i = 0; i < names.length / 2; i++) {
 console.log(names);
 console.log(namesReversed);
 console.log(names.reverse());
+
+
+
+function chooseYears(start, end) {
+        let yearArray = [];
+        for (var i = start; i <= end; i++) {        
+             yearArray.push(i);
+        }
+       let result = [];
+
+  yearArray.forEach(function(year) {
+       if (getLeapYear(year))
+       result.push(year);
+  });
+
+  return result;
+}
+
+function getLeapYear(year) {
+   if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+      return year;
+   } else {
+      return false;
+     }
+}
