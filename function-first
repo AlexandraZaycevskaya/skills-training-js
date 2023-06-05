@@ -128,19 +128,20 @@ const RUB_AED_EXCHANGE_RATE = 0.045882;
 const targetCurrency = convertRub(valueRub, currency);
 function convertRub(valueRub, currency) {
 switch (currency) {
-case "USD".
-currency = SivalueRub^ * $(RUB_USD_EXCHANGE_RATEJ;
+case "USD":
+currency = `${valueRub} * ${RUB_USD_EXCHANGE_RATE}`;
 break;
-case "EUR".
-currency = SivalueRub] * $(RUB_EUR_EXCHANGE_RATE];
-break, case "KZT":
-currency = SivalueRub|* $(RUB_KZT_EXCHANGE_RATE);
+case "EUR":
+currency = `${valueRub} * ${RUB_EUR_EXCHANGE_RATE}`;
+break; 
+case "KZT":
+currency = `${valueRub} * ${RUB_KZT_EXCHANGE_RATE}`;
 break;
 case "AED":
-currency = '$(valueRub|* $(RUB_AED_EXCHANGE_RATE);
+currency = `${valueRub} * ${RUB_AED_EXCHANGE_RATE}`;
 break;
-default:
-alert("Неизвестное значение");
+default: alert("Неизвестное значение");
 }
-return valueRub, currency,
+return valueRub, currency;
 }
+convertRub(valueRub, currency);
