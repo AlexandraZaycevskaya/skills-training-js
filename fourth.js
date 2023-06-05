@@ -4,6 +4,15 @@ for (let i = -50; i <= 50; i++) {
     console.log(i);
 }
 
+// let arr = [];
+// for (let i = -50; i <= 50; i++) {
+//     arr.push(i);
+// }
+
+// for (const element of arr) {
+//     console.log(element);
+// }
+
 // 2 задание
 
 let a = 10;
@@ -11,6 +20,15 @@ for (let a = 10; a >= 0; a--) {
     console.log(a);
 }
 
+
+// let arr = [];
+// for (let i = 10; i >= 0; i--) {
+//     arr.push(i);
+// }
+
+// for (const element of arr) {
+//     console.log(element);
+// }
 // 3 задание
 
 for (let i = 1; i <= 100; i++) {
