@@ -73,6 +73,16 @@ while (i <= 100) {
     i++;
 }
 
+// let arr = [];
+// for (let i = 1; i <= 100; i++) {
+//     arr.push(i);
+// }
+
+// for (const element of arr) {
+//     if (element % 2 !== 0) continue;
+//     console.log(element)
+// }
+
 // 7 задание
 const INTEREST_RATE = 1.05;
 const BANK_ACCOUNT = 1000000;
