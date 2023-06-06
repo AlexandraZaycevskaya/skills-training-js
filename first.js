@@ -68,3 +68,12 @@ let arr = {
 	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
 };
 alert(arr[lang]);
+
+
+let a = prompt("Запишите первое число", 1);
+let b = prompt("Запишите второе число", 10);
+let c = prompt("Запишите третье число", 100);
+min = Math.min(a, b, c);
+max = Math.max(a, b, c);
+alert("Минимум из " + a + ", " + b + ", " + c + " равно " + min);
+alert("Максимум  из " + a + ", " + b + ", " + c + " равно " + max);
