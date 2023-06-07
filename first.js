@@ -40,34 +40,7 @@ let me = {
 
 console.log(me)
 
-let lang = 'ru';
-if (lang == 'ru') {
-	let arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
-}
-if (lang == 'en') {
-	arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
-}
-alert(arr);
 
-
-let lang = 'ru';
-switch (lang) {
-	case 'ru':
-		let arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
-	break;
-	case 'en':
-		arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
-	break;
-}
-alert(arr);
-
-
-let lang = 'ru';
-let arr = {
-	'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
-	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
-};
-alert(arr[lang]);
 
 
 let a = prompt("Запишите первое число", 1);
