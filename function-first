@@ -1,3 +1,4 @@
+// 1 задание
 function multiple(a, b) {
     const result = a * b;
     return result;
@@ -5,6 +6,8 @@ function multiple(a, b) {
 
 console.log(multiple(5, 6));
 
+
+// 2 задание
 buildDate();
 let dayInput = prompt('Какое сегодня число?');
 let day = Number(dayInput);
@@ -27,6 +30,8 @@ function buildDate(day, month, year) {
 
 alert(buildDate(day, month, year));
 
+
+// 3 задание
 const ageInput = prompt('Сколько вам лет?');
 const age = Number(ageInput);
 const adult = 18;
@@ -36,6 +41,9 @@ function isAdult(age) {
 console.log(isAdult(age))
 isAdult();
 
+
+
+// 4 задание
 getMonthByNumber();
 let monthInput = prompt('Enter month number');
 let month = Number(monthInput);
@@ -84,6 +92,8 @@ function getMonthByNumber(number) {
 }
 alert(getMonthByNumber(month));
 
+
+// 5 задание
 const valueRub = 2000;
 const currency = 'usd';
 
