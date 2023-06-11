@@ -1,147 +1,118 @@
-console.log(multiple(6, 545))
-
 function multiple(a, b) {
-    return a * b;
+    const result = a * b;
+    return result;
 }
 
+console.log(multiple(5, 6));
 
-let day = 24;
-let month = 5;
-let year = 2023;
-let dayUntilTheTenth = day;
-let monthUntilTheTenth = month;
+buildDate();
+let dayInput = prompt('Какое сегодня число?');
+let day = Number(dayInput);
+let monthInput = prompt('Какой сегодня месяц?');
+let month = Number(monthInput);
+let yearInput = prompt('Какой сегодня год?');
+let year = Number(yearInput);
 
-console.log(buildDate(day, month, year));
+if (day < 10) {
+    day = `0${day}`
+}
+
+if (month < 10) {
+    month = `0${month}`
+}
 
 function buildDate(day, month, year) {
-    if (day < 10) dayUntilTheTenth = `0${day}`
-    if (month < 10) monthUntilTheTenth = `0${month}`
-    return `${dayUntilTheTenth}/${monthUntilTheTenth}/${year}`
+    return `${day}/${month}/${year}`
 }
 
+alert(buildDate(day, month, year));
 
-console.log(isAdult(19));
-
+const ageInput = prompt('Сколько вам лет?');
+const age = Number(ageInput);
+const adult = 18;
 function isAdult(age) {
-   return age >= 18;
+    return age >= adult;
 }
-
-
+console.log(isAdult(age))
+isAdult();
 
 getMonthByNumber();
 let monthInput = prompt('Enter month number');
-let monthNumber = Number(monthInput);
+let month = Number(monthInput);
 
-function getMonthByNumber(monthNumber) {
-    switch (monthNumber) {
+function getMonthByNumber(number) {
+    switch (number) {
         case 1:
-            return('january');
-        break;
-
+            return 'january';
+            break;
         case 2:
-            return('february');
-        break;
-
+            return 'february';
+            break;
         case 3:
-            return('march');
-        break;
-
+            return 'march';
+            break;
         case 4:
-            return('april');
-        break;
-
+            return 'april';
+            break;
         case 5:
-            return('may');
-        break;
-
+            return 'may';
+            break;           
         case 6:
-            return('june');
-        break;
-
+            return 'june';
+            break;            
         case 7:
-            return('july');
-        break;
-
+            return 'july';
+            break;            
         case 8:
-            return('august');
-        break;
-
+            return 'august';
+            break;            
         case 9:
-            return('september');
-        break;
-
+            return 'september';
+            break;            
         case 10:
-            return('october');
-        break;
-
+            return 'october';
+            break;            
         case 11:
-            return('november');
-        break;
-
+            return 'november';
+            break;
         case 12:
-            return('december');
-        break;
+            return 'december';
+            break;
+        default: 'error';
+            break;
     }
 }
+alert(getMonthByNumber(month));
 
-console.log(getMonthByNumber(monthNumber));
+const valueRub = 2000;
+const currency = 'usd';
 
+const USD_EXCHANGE_RATE = 0.012;
+const EUR_EXCHANGE_RATE = 0.011;
+const KZT_EXCHANGE_RATE = 5.59;
+const AED_EXCHANGE_RATE = 0.045;
 
-
-convertRub();
-
-let USD = 0.012;
-let EUR = 0.011;
-let KZT = 5.58;
-let AED = 0.045;
-
-console.log(convertRub(10000,'EUR'));
+let convertValue = convertRub(valueRub, currency);
+alert(`${valueRub} rub = ${convertValue} ${currency}`)
 
 function convertRub(valueRub, currency) {
+    let result;
     switch (currency) {
-        case 'USD':
-            return(valueRub * USD)
-        break;
-
-        case 'EUR':
-            return(valueRub * EUR)
-        break;
-
-        case 'KZT':
-            return(valueRub * KZT)
-        break;
-
-        case 'AED':
-            return(valueRub * AED)
-        break;
+        case 'usd':
+            result = `${valueRub}` * `${USD_EXCHANGE_RATE}`;
+            break;
+        case 'eur':
+            result = `${valueRub}` * `${EUR_EXCHANGE_RATE}`;
+            break;
+        case 'kzt':
+            result = `${valueRub}` * `${KZT_EXCHANGE_RATE}`;
+            break;
+        case 'aed':
+            result = `${valueRub}` * `${AED_EXCHANGE_RATE}`;
+            break;
+        default: 'error';
+            break;
     }
-    return currency;
+    return result;
 }
 
-
-const valueRub = 2;
-const currency = "KZT";
-const RUB_USD_EXCHANGE_RATE = 0.012505;
-const RUB_EUR_EXCHANGE_RATE = 0.011639;
-const RUB_KZT_EXCHANGE_RATE = 5.59;
-const RUB_AED_EXCHANGE_RATE = 0.045882;
-const targetCurrency = convertRub(valueRub, currency);
-function convertRub(valueRub, currency) {
-switch (currency) {
-case "USD":
-currency = `${valueRub} * ${RUB_USD_EXCHANGE_RATE}`;
-break;
-case "EUR":
-currency = `${valueRub} * ${RUB_EUR_EXCHANGE_RATE}`;
-break; 
-case "KZT":
-currency = `${valueRub} * ${RUB_KZT_EXCHANGE_RATE}`;
-break;
-case "AED":
-currency = `${valueRub} * ${RUB_AED_EXCHANGE_RATE}`;
-break;
-default: alert("Неизвестное значение");
-}
-return valueRub, currency;
-}
-convertRub(valueRub, currency);
