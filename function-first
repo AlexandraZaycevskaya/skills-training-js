@@ -1,7 +1,6 @@
 // 1 задание
 function multiple(a, b) {
-    const result = a * b;
-    return result;
+ return  = a * b;
 }
 
 console.log(multiple(5, 6));
@@ -32,9 +31,9 @@ alert(buildDate(day, month, year));
 
 
 // 3 задание
-const ageInput = prompt('Сколько вам лет?');
-const age = Number(ageInput);
-const adult = 18;
+const AGE_INPUT = prompt('Сколько вам лет?');
+const AGE = Number(ageInput);
+const ADULT = 18;
 function isAdult(age) {
     return age >= adult;
 }
@@ -52,40 +51,28 @@ function getMonthByNumber(number) {
     switch (number) {
         case 1:
             return 'january';
-            break;
         case 2:
             return 'february';
-            break;
         case 3:
             return 'march';
-            break;
         case 4:
             return 'april';
-            break;
         case 5:
-            return 'may';
-            break;           
+            return 'may';         
         case 6:
-            return 'june';
-            break;            
+            return 'june';          
         case 7:
-            return 'july';
-            break;            
+            return 'july';         
         case 8:
-            return 'august';
-            break;            
+            return 'august';          
         case 9:
-            return 'september';
-            break;            
+            return 'september';          
         case 10:
-            return 'october';
-            break;            
+            return 'october';          
         case 11:
             return 'november';
-            break;
         case 12:
             return 'december';
-            break;
         default: 'error';
             break;
     }
@@ -110,16 +97,12 @@ function convertRub(valueRub, currency) {
     switch (currency) {
         case 'usd':
             result = `${valueRub}` * `${USD_EXCHANGE_RATE}`;
-            break;
         case 'eur':
             result = `${valueRub}` * `${EUR_EXCHANGE_RATE}`;
-            break;
         case 'kzt':
             result = `${valueRub}` * `${KZT_EXCHANGE_RATE}`;
-            break;
         case 'aed':
             result = `${valueRub}` * `${AED_EXCHANGE_RATE}`;
-            break;
         default: 'error';
             break;
     }
